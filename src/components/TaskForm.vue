@@ -48,7 +48,7 @@ function handleSubmit() {
 
   emit('save', {
     title: title.value,
-    date: date.value,
+    date: new Date(date.value),
     description: description.value
   })
 
